@@ -10,7 +10,7 @@
 #- Violation recording with timestamps stored in logs
 
 
-from flask import Flask, render_template, Response, jsonify, send_from_directory, send_file, request
+from flask import Flask, render_template, Response, jsonify, send_file, request
 import cv2
 import csv
 import threading
@@ -18,7 +18,6 @@ import numpy as np
 from collections import deque
 from datetime import datetime
 import os
-import tempfile
 from werkzeug.utils import secure_filename
 from detectors import load_models, detect_traffic_lights
 from logic import check_violations
